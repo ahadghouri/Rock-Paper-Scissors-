@@ -7,17 +7,17 @@ function playRound(playerSelection, computerSelection) {
     {
         if(computerSelection == "rock")
         {
-            console.log("Its a draw!");
+            alert("Its a draw!");
             return "nr";
         }
         else if(computerSelection == "paper")
         {
-            console.log("You Lose! Paper beats Rock");
+            alert("You Lose! Paper beats Rock");
             return "computer;"
         }
         else
         {
-            console.log("You Win! Rock beats Scissors");
+            alert("You Win! Rock beats Scissors");
             return "player";
         }
     }
@@ -25,17 +25,17 @@ function playRound(playerSelection, computerSelection) {
     {
         if(computerSelection == "rock")
         {
-            console.log("You Win! Paper beats Rock");
+            alert("You Win! Paper beats Rock");
             return "player";
         }
         else if(computerSelection == "paper")
         {
-            console.log("Its a draw!");
+            alert("Its a draw!");
             return "nr";
         }
         else
         {
-            console.log("You Lose! Scissors beats Paper");
+            alert("You Lose! Scissors beats Paper");
             return "computer";
         }
     }
@@ -43,17 +43,17 @@ function playRound(playerSelection, computerSelection) {
     {
         if(computerSelection == "rock")
         {
-            console.log("You Lose! Rock beats Scissors");
+            alert("You Lose! Rock beats Scissors");
             return "computer";
         }
         else if(computerSelection == "paper")
         {
-            console.log("You Win! Scissors beat Paper");
+            alert("You Win! Scissors beat Paper");
             return "player";
         }
         else
         {
-            console.log("Its a draw!");
+            alert("Its a draw!");
             return "nr";
         }
     }
@@ -98,4 +98,4 @@ function game(n) {
 
 let n = parseInt(prompt("How many games do you want to play?"));
 game(n);
-console.log("Player won: " + player + " Computer won: " + computer + " Draw: " + nr);
+alert("Player won: " + player + " Computer won: " + computer + " Draw: " + nr);
