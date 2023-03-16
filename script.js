@@ -96,6 +96,11 @@ function game(n) {
      }
 }
 
-let n = parseInt(prompt("How many games do you want to play?"));
-game(n);
-alert("Player won: " + player + " Computer won: " + computer + " Draw: " + nr);
+//let n = parseInt(prompt("How many games do you want to play?"));
+const round = document.querySelector('#round');
+round.addEventListener('click', () => {
+    let n = parseInt(prompt("How many games do you want to play?"));
+    game(n);
+    alert("Player won: " + player + " Computer won: " + computer + " Draw: " + nr);
+})
+
